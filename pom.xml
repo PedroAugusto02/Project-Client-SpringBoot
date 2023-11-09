@@ -28,7 +28,6 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -70,6 +69,7 @@
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.22</version>
 						</exclude>
 					</excludes>
 				</configuration>
