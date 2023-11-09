@@ -7,13 +7,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
-
+import lombok.Data;
 
 @Entity
-@Getter@Setter
-public class Cliente {
+@Data
+public class Client {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Auto Incremento cargo do Banco
@@ -25,7 +23,7 @@ public class Cliente {
     @Column(nullable = false, length = 15)
     private String cpf;
 
-    @Column
+    @Column(name = "data_cadastro")
     private LocalDate dataCadastro;
     
 }
